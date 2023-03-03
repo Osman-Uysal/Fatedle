@@ -1,0 +1,27 @@
+body {
+    background-image: url("vintage.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+
+
+  
+h1{
+    color: blue;
+    text-align: center;
+    font-size:200px
+    
+}
+
+h2{
+    color: rgb(21, 238, 93);
+    text-align: center;
+    font-size:70px
+
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size:40px   
+}
