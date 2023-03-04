@@ -1,27 +1,92 @@
-body {
+
+.txt {
+    color: rgb(21, 238, 93);
+    font-size:70px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    outline: none; 
+  }
+  
+  .txt:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+
+
+
+ 
+ body {
     background-image: url("vintage.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    font-family: Determination Mono;
   }
-
-
   
-h1{
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
     color: blue;
     text-align: center;
-    font-size:200px
-    
-}
-
-h2{
+    font-size: 200px;
+  }
+  
+  .toggle {
+    margin-top: 50px;
+  }
+  
+  .toggle-label {
+    display: inline-block;
     color: rgb(21, 238, 93);
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
     text-align: center;
-    font-size:70px
-
-}
-
-p{
-    color: rgb(0, 0, 0);
-    font-size:40px   
-}
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-slider {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    background-color: grey;
+    cursor: pointer;
+  }
+  
+  .toggle-slider:before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .toggle-input:checked ~ .toggle-slider {
+    background-color: rgb(21, 238, 93);
+  }
+  
+  .toggle-input:checked ~ .toggle-slider:before {
+    transform: translateX(50px);
+  }
+  
