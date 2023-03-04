@@ -90,3 +90,44 @@
     transform: translateX(50px);
   }
   
+.container {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+.choices button {
+  background-color: #0077ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.choices button:hover {
+  background-color: #0055cc;
+}
+
+
+/* narrative */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.choices {
+  margin-top: 20px;
+}
+
+button {
+  margin: 5px;
+}

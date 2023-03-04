@@ -1,24 +1,4 @@
-const newtxt = ["Sound" , "Music "];
-const txtElements = document.getElementsByClassName("txt");
 
-
-
-let i = 0;
-const intervalId = setInterval(function () {
-  let j = 0;
-  const textIntervalId = setInterval(function () {
-    txtElements[i].textContent += newtxt[i][j];
-    j++;
-
-    if (j === newtxt[i].length) {
-      clearInterval(textIntervalId);
-      i++;
-      if (i === newtxt.length) {
-        clearInterval(intervalId);
-      }
-    }
-  }, 50);
-}, 1000);
 
 
 
