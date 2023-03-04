@@ -1,4 +1,4 @@
-var currentNarrative = "N1a";
+var currentNarrative = "N1";
 var option1 = "Pray to Deus mortis";
 var option2 = "Face Judgment";
 var option3 = "Embrace the Void";
@@ -11,7 +11,7 @@ var option3Element = document.getElementById("option3");
 function chooseOption1() {
     switch (currentNarrative) {
       case "N1":
-        currentNarrative = "N1";
+        currentNarrative = "N1a";
         option1 = "Go deeper into the dungeon";
         option2 = "Go back to the surface";
         narrativeElement.textContent = "Moments later, you awaken in a strange and unfamiliar place. The darkness that surrounded you before has lifted, and you can see that you are in some sort of dungeon. But something is different. You feel lighter, almost weightless, and as you look down, you realize that your body is no longer flesh and blood, but instead a skeleton. How did this happen? What force could have brought you back from the dead, and why in this form?";
@@ -20,7 +20,7 @@ function chooseOption1() {
         option3Element.style.display = "none"; // Hide option 3
         break;
       case "N1a":
-        currentNarrative = "N1a";
+        currentNarrative = "N2a";
         option1 = "Investigate the noise";
         option2 = "Continue through the dungeon";
         narrativeElement.textContent = "You walk deeper into the dungeon and come across a room with strange markings on the walls. You hear a noise coming from one of the corners of the room. What do you do?";
@@ -29,7 +29,7 @@ function chooseOption1() {
         option3Element.style.display = "none"; // Hide option 3
         break;
       case "N2a":
-        currentNarrative = "N2a";
+        currentNarrative = "N3a";
         option1 = "Approach the figure";
         option2 = "Hide and observe";
         narrativeElement.textContent = "As you investigate the noise, you see a shadowy figure moving in the corner of the room. What do you do?";
@@ -43,7 +43,6 @@ function chooseOption1() {
     }
   }
   
-
 function chooseOption2() {
   switch (currentNarrative) {
     case "N1a":
@@ -60,7 +59,6 @@ function chooseOption2() {
       break;
   }
 }
-
 
 
       function chooseOption3() {
