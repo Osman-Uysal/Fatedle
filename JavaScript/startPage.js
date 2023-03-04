@@ -37,3 +37,52 @@ settingsButton.addEventListener("click", function () {
 });
 
 
+// Apply typewriting effect to "day" and "God" h2 elements
+const dayElement = document.getElementById("day");
+const GodElement = document.getElementById("God");
+const today = new Date();
+const dayOfWeek = today.toLocaleDateString("en-US", { weekday: "long" });
+let k = 0;
+const dayIntervalId = setInterval(function () {
+  dayElement.textContent += dayOfWeek[k];
+  k++;
+
+  if (k === dayOfWeek.length) {
+    clearInterval(dayIntervalId);
+  }
+}, 100);
+
+let God;
+switch (dayOfWeek) {
+  case "Monday":
+    God = "Moon";
+    break;
+  case "Tuesday":
+    God = "Toxic";
+    break;
+  case "Wednesday":
+    God = "Death";
+    break;
+  case "Thursday":
+    God = "Spider";
+    break;
+  case "Friday":
+    God = "Dragon";
+    break;
+  case "Saturday":
+    God = "Stone";
+    break;
+  case "Sunday":
+    God = "Demon";
+    break;
+}
+let l = 0;
+const godIntervalId = setInterval(function () {
+  GodElement.textContent += God[l];
+  l++;
+
+  if (l === God.length) {
+    clearInterval(godIntervalId);
+  }
+}, 50);
+
