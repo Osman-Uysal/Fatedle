@@ -9,7 +9,7 @@
 }
 
 .txt {
-    color: rgb(21, 238, 93);
+    color: black;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@
   }
   
   .txt:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: gray;
     border-radius: 5px;
   }
 
@@ -35,8 +35,9 @@
     background-image: url("vintage.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     font-family: "Determination Mono", monospace;
+    overflow-y: scroll;
   }
   
   #container {
@@ -46,12 +47,52 @@
   }
   
   h1 {
-    color: blue;
+    color: black;
     text-align: center;
     font-size: 200px;
   }
   
 
+  /* Game */
+  .game-container {
+    font-size: 45px;
+    text-align: center;
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 400px;
+    flex-direction: column;
+  }
+  
+  .option-button {
+    padding: 25px 30px;
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  
+  
+ button {
+    display: inline-block;
+    background-color: transparent;
+    font-family: "Determination Mono", monospace;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
 
 
   /* Settings */
@@ -61,7 +102,7 @@
   
   .toggle-label {
     display: inline-block;
-    color: rgb(21, 238, 93);
+    color: black;
     font-size: 70px;
     font-weight: 600;
     text-transform: uppercase;
@@ -97,7 +138,7 @@
   }
   
   .toggle-input:checked ~ .toggle-slider {
-    background-color: rgb(21, 238, 93);
+    background-color: black;
   }
   
   .toggle-input:checked ~ .toggle-slider:before {
@@ -116,7 +157,7 @@
 }
 
 .choices button {
-  background-color: #0077ff;
+  background-color: black;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -126,7 +167,7 @@
 }
 
 .choices button:hover {
-  background-color: #0055cc;
+  background-color: black;
 }
 
 
@@ -142,6 +183,4 @@
   margin-top: 20px;
 }
 
-button {
-  margin: 5px;
-}
+
