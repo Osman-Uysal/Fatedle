@@ -613,27 +613,6 @@ function chooseOption2() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function chooseOption3() {
   switch (currentNarrative) {
     case "N":
