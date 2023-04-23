@@ -90,6 +90,8 @@ function updateOption(option, element, callback) {
   typeWriter(element, option, 0, callback);
 }
 
+
+// Option 1
 function chooseOption1() {
   
   switch (currentNarrative) {
